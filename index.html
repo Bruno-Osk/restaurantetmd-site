@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante TMD</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f4f4f4; }
         header { background: #d32f2f; color: white; padding: 20px; font-size: 24px; }
-        section { padding: 20px; }
-        .gallery img { width: 100px; margin: 10px; }
-        footer { background: #333; color: white; padding: 10px; }
+        section { padding: 20px; margin: 0 10px; }
+        .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 8px; }
+        footer { background: #333; color: white; padding: 10px; font-size: 14px; }
+        a { color: #d32f2f; text-decoration: none; }
+        .social-icons a { margin: 0 10px; font-size: 24px; color: white; }
+        .social-icons a:hover { color: #d32f2f; }
+        .cardapio-link { background-color: #d32f2f; color: white; padding: 10px 20px; border-radius: 5px; }
     </style>
 </head>
 <body>
@@ -25,13 +29,13 @@
     
     <section>
         <h2>Nosso Cardápio</h2>
-        <p><a href="https://restaurantetmd.com.br">Clique aqui para acessar o cardápio</a></p>
+        <p><a href="https://restaurantetmd.com.br" class="cardapio-link" target="_blank">Clique aqui para acessar o cardápio</a></p>
     </section>
     
     <section class="gallery">
         <h2>Galeria</h2>
-        <img src="prato1.jpg" alt="Prato 1">
-        <img src="prato2.jpg" alt="Prato 2">
+        <img src="prato1.jpg" alt="Prato delicioso com carne e legumes" />
+        <img src="prato2.jpg" alt="Prato com peixe e salada fresca" />
     </section>
     
     <section>
@@ -44,9 +48,14 @@
         <h2>Contato</h2>
         <p>📍 Endereço: Santa Luzia</p>
         <p>📞 WhatsApp: (XX) XXXXX-XXXX</p>
-        <p>📷 Instagram: <a href="https://www.instagram.com/restaurantetmd">@restaurantetmd</a></p>
+        <p>📷 Instagram: <a href="https://www.instagram.com/restaurantetmd" target="_blank">@restaurantetmd</a></p>
     </section>
-    
+
+    <section class="social-icons">
+        <a href="https://www.instagram.com/restaurantetmd" target="_blank">📷</a>
+        <a href="https://wa.me/XX1234567890" target="_blank">📞</a>
+    </section>
+
     <footer>
         <p>&copy; 2025 Restaurante TMD - Todos os direitos reservados</p>
     </footer>
